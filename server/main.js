@@ -40,7 +40,9 @@ server.use('/auth', new AuthController().router)
 
 
 //YOUR ROUTES HERE!!!!!!
+import PetController from './Controllers/PetController'
 
+server.use('/api/pets', new PetController().router)
 
 
 //Default Error Handler
